@@ -14,7 +14,7 @@ export const GameCard = (props: GameCardProps) => {
     } = props
 
     return (
-        <Card minWidth='240px' borderRadius={10} overflow="hidden">
+        <Card>
             <Image src={getCroppedImgUrl(game.background_image)}/>
             <CardBody>
                 <Heading fontSize="2xl">{game.name}</Heading>
