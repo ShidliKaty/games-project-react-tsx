@@ -1,4 +1,4 @@
-import {FaWindows, FaPlaystation, FaXbox, FaApple, FaLinux, FaAndroid} from 'react-icons/fa'
+import {FaAndroid, FaApple, FaLinux, FaPlaystation, FaWindows, FaXbox} from 'react-icons/fa'
 import {MdPhoneIphone} from 'react-icons/md'
 import {SiNintendo} from 'react-icons/si'
 import {BsGlobe} from 'react-icons/bs'
@@ -11,7 +11,7 @@ interface Props {
 }
 
 export const PlatformIconList = ({platforms}: Props) => {
-    const iconMap: {[key: string] : IconType} = {
+    const iconMap: { [key: string]: IconType } = {
         pc: FaWindows,
         playstation: FaPlaystation,
         xbox: FaXbox,

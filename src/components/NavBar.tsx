@@ -6,6 +6,7 @@ import {SearchInput} from "./SearchInput";
 interface Props {
     onSearch: (searchText: string) => void
 }
+
 const NavBar = ({onSearch}: Props) => {
     return (
         <HStack padding="10px">
