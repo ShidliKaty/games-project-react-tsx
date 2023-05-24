@@ -1,16 +1,16 @@
-import {FaAndroid, FaApple, FaLinux, FaPlaystation, FaWindows, FaXbox} from 'react-icons/fa'
-import {MdPhoneIphone} from 'react-icons/md'
-import {SiNintendo} from 'react-icons/si'
-import {BsGlobe} from 'react-icons/bs'
-import {Platform} from "../hooks/usePlatforms";
-import {HStack, Icon} from "@chakra-ui/react";
-import {IconType} from "react-icons";
+import { FaAndroid, FaApple, FaLinux, FaPlaystation, FaWindows, FaXbox } from 'react-icons/fa'
+import { MdPhoneIphone } from 'react-icons/md'
+import { SiNintendo } from 'react-icons/si'
+import { BsGlobe } from 'react-icons/bs'
+import { Platform } from "../entities/Platform";
+import { HStack, Icon } from "@chakra-ui/react";
+import { IconType } from "react-icons";
 
 interface Props {
     platforms: Platform[]
 }
 
-export const PlatformIconList = ({platforms}: Props) => {
+export const PlatformIconList = ({ platforms }: Props) => {
     const iconMap: { [key: string]: IconType } = {
         pc: FaWindows,
         playstation: FaPlaystation,
